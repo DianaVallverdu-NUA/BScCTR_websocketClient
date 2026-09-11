@@ -16,6 +16,10 @@ body {
     width: 30vw;
 }
 
-#message {
-    margin-left: 3px;
+label {
+    width: 150px;
+}
+
+#submit {
+    margin-left: 4px;
 }
