@@ -1,6 +1,6 @@
 const messageInput = document.getElementById("message");
 const sendMessageButton = document.getElementById("send");
-const responseSpan = document.getElementById("response");
+const logDiv = document.getElementById("log");
 const submitNameButton = document.getElementById("submit");
 const nameInput = document.getElementById("name");
 
@@ -14,6 +14,7 @@ messageInput.oninput = (ev) => message = ev.target.value;
 sendMessageButton.onclick = (ev) => {
     ev.preventDefault();
     const data = {message: message};
+    if(username.length > 0) data.name = username;
     sendMessageToServer(data);
 }
 

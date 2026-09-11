@@ -6,7 +6,9 @@ function sendMessageToServer(data) {
 
 websocket.addEventListener("message", ({ data }) => {
     const parsedData = JSON.parse(data);
-    if (parsedData.message) {
-        responseSpan.innerHTML = parsedData.message;
-    }
+    if(!parsedData.message) return;
+
+    const newSpan = document.createElement("span");
+    newSpan.innerHTML =  parsedData.message;
+    logDiv.prepend(newSpan);
 })
