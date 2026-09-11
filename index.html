@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Websocket Client</title>
-    <script src="websocket.js" defer > </script>
+    <script src="websocket.js" defer> </script>
     <script src="pageEditor.js" defer> </script>
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-    <div id="container">
-        <label for="message">Message</label>
-        <input id="message" name="message" type="text" />
+    <div class="container with_third">
+
+    </div>
+    <div class="container with_third">
+        <div class="container horizontal">
+            <label for="message">Message</label>
+            <input id="message" name="message" type="text" />
+        </div>
         <button id="send"> Send Message </button>
         <span id="response"></span>
     </div>
