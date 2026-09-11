@@ -1,5 +1,6 @@
 const messageInput = document.getElementById("message");
 const sendMessageButton = document.getElementById("send");
+const responseSpan = document.getElementById("response");
 
 let message = "";
 
